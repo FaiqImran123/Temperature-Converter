@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #DFE0E2;
+        }
+        #temp-box {
+            background-color: white;
+            box-shadow: 10px 10px 10px black;
+            width: 300px;
+            height: 390px;
+            margin: 0px auto;
+            border-radius: 10px;
+
+        }
+        #fc, #cf{
+            width: 181px;
+            font-weight: bold;
+
+        }
+        button{
+            background-color: #4F86C6;
+            color: white;
+        }
+        button:hover{
+            background-color: #4FB0C6;
+          
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div id="temp-box">
+        <br>
+       
+        <p style="text-align: center; color: #4F86C6;  font-weight: bold; font-size: 25px;">Temperature Converter</p>
+        <br>
+        <input value="0" id="inp" type="text" style="display: block; margin: 0px auto; text-align: center;" placeholder="0">
+        <br>
+        <div id="cf" style="margin: 0px auto;">
+            <input type="radio" id="cel" name="op">
+            <label for="cel">Celsius ➡️ Fahrenheit</label>
+        </div>
+        <br>
+        <br>
+        <div id="fc" style="margin: 0px auto;">
+            <input type="radio" id="fer" name="op">
+            <label for="fer">Fahrenheit ➡️ Celsius</label>
+        </div>
+        
+        <br>
+        <button id="submit" style="display:block;margin:  0px auto; width: 70px; height: 40px;">Calculate</button>
+        <p id="result" style="text-align: center; font-weight: bold; font-size: 30px;"></p>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
